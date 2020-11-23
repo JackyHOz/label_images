@@ -38,8 +38,6 @@ def show_custom_labels(model, bucket, photo, min_confidence, filename):
             width = imgWidth * box['Width']
             height = imgHeight * box['Height']
 
-            # fnt = ImageFont.truetype('/Library/Fonts/Arial.ttf', 50)
-            # , font=fnt)
             draw.text((left, top), customLabel['Name'], fill='#00d400')
 
             print('Left: ' + '{0:.0f}'.format(left))
