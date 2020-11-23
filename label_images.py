@@ -71,8 +71,6 @@ def main():
         MaxKeys=10000)
 
     for i in response['Contents'][1:]:
-        # print(i['Key'])
-        # photo = "testall/IMG_ (305).JPG"
         photo = i['Key']
         # replace model arn
         model = '<your arn>'
